@@ -1,8 +1,8 @@
 package edu.cmu.cs.cs214.rec02.points;
 
 public class PolarPoint implements Point {
-    public double len;
-    public double angle;
+    private double len;
+    private double angle;
 
     public PolarPoint (double len, double angle) {
         this.len = len;
