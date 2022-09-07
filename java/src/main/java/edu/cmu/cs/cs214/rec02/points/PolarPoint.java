@@ -9,11 +9,21 @@ public class PolarPoint implements Point {
         this.angle = angle;
     }
 
-    public int computeX() {
+    private int computeX() {
         return (int) (this.len * Math.cos(this.angle));
     }
 
-    public int computeY() {
+    private int computeY() {
         return (int) (this.len * Math.sin(this.angle));
+    }
+
+    @Override
+    public int getX() {
+        return computeX();
+    }
+
+    @Override
+    public int getY() {
+        return computeY();
     }
 }

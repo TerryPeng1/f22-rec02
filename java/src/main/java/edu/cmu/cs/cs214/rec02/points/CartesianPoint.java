@@ -9,11 +9,13 @@ public class CartesianPoint implements Point {
         this.y = y;
     }
 
-    public int computeX () {
+    @Override
+    public int getX () {
         return this.x;
     }
 
-    public int computeY () {
+    @Override
+    public int getY () {
         return this.y; 
     }
 }
